@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoque Simples</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Estoque Simples</h1>
+
+            <ul class="menu">
+                <li><a href="#">Cadastro</a></li>
+                <li><a href="#">Visualizar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <h2>Cadastro de Produtos</h2>
+        <form>
+            <div class="linha">
+                <div class="campo">
+    
+                    <label>ID:</label>
+                    <input type="text" value="1" readonly>
+                </div>
+
+                 <div class="campo">
+                        <label>Nome:</label>
+                        <input type="text" placeholder="Digite o nome">
+                    </div>
+
+                    <div class="campo">
+                        <label>Quantidade:</label>
+                        <input type="text" placeholder='0'>
+                    </div>
+
+                    <div class="campo">
+                        <label>Validade:</label>
+                        <input type="date">
+                    </div>
+
+                    <div class="linha">
+                        <div class="campo">
+                            <label>Status:</label>
+                            <select>
+                                <option>Disponivel</option>
+                                <option>Esgotado</option>
+                                <option>Vencido</option>
+                            </select>
+                        </div>
+                    </div>
+
+                   <button class="btn cadastrar">Cadastrar</button>
+                <button type="reset" class="btn limpar">Limpar</button>
+                          
+        
+        </form>
+    </div>
+       
+         <div class="card">
+            <h2>Mercadorias</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Quantidade</th>
+                        <th>Validade</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Arroz</td>
+                        <td>100</td>
+                        <td>2025-10-10</td>
+                        <td><span class="status disponivel">Disponível</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Leite</td>
+                        <td>0</td>
+                        <td>2024-02-10</td>
+                        <td><span class="status esgotado">Esgotado</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Carne</td>
+                        <td>50</td>
+                        <td>2023-09-01</td>
+                        <td><span class="status vencido">Vencido</span></td>
+                    </tr>
+                     <tr>
+                        <td>4</td>
+                        <td>Couve</td>
+                        <td>69</td>
+                        <td>2024-09-01</td>
+                        <td><span class="status vencido">Vencido</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <footer>
+        © 2025 - Todos os direitos reservados por João Victor
+    </footer>
+
+</body>
+</html>
